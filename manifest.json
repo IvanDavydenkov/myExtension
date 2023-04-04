@@ -1,0 +1,19 @@
+{
+  "name": "My Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "scripting",
+    "webNavigation",
+    "webRequest",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "My Extension"
+  }
+}
