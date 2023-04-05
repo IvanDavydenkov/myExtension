@@ -3,9 +3,18 @@
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
-    "128": "icon.png"
+    "128": "./img/icon.png"
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./components/content.js"],
+      "css": ["./components/content.module.css"]
+    }
+  ],
   "permissions": [
+    "activeTab",
+    "scripting",
     "storage",
     "scripting",
     "webNavigation",
@@ -14,7 +23,9 @@
   ],
 
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "./pages/popup.html",
     "default_title": "My Extension"
+  },
+  "background": {
   }
 }
