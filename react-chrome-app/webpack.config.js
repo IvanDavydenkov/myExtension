@@ -1,12 +1,12 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: "./src/index.js",
   mode: "production",
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.js?$/,
         use: [
           {
             loader: "ts-loader",
@@ -25,5 +25,6 @@ module.exports = {
   output: {
     filename: "content.js",
     path: path.resolve(__dirname, "..", "extension"),
-  },
+  }
+
 };
