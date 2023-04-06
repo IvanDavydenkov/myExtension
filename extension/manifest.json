@@ -4,7 +4,7 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["https://finandy.com/ru/panel"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"],
       "css": ["main.css"]
     }
@@ -16,5 +16,5 @@
   },
   "background": {
   },
-  "permissions": ["scripting", "activeTab", "tab"]
+  "permissions": ["scripting", "activeTab"]
 }
