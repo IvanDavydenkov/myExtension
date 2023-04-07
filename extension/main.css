@@ -6,7 +6,9 @@
     list-style-type: none;
     padding: 0;
     max-width: 70vw;
-    overflow: auto;
+    overflow:auto;
+    margin: 0;
+    max-height: 25vh;
 }
 
 
@@ -70,12 +72,25 @@
 }
 
 #ex_form__input-rows,#ex_form__input-interval{
-    min-width: 80px;
+    box-sizing: content-box;
+    min-width: 60px;
     max-width: 120px;
-    height: 40px;
+    height: 20px;
     font-size: 1.3rem;
     padding: 10px 15px;
     border: none;
     background-color: white;
     border-radius: 5px;
+}
+.ex_main-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 5%;
+    align-items: flex-start;
+}
+.ex_main-box > canvas {
+    max-width: 40%;
+    max-height: 25vh;
 }
