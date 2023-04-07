@@ -1,9 +1,14 @@
 .ex_list {
-    display: flex;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
     list-style-type: none;
     padding: 0;
+    max-width: 70vw;
+    overflow: auto;
 }
+
 
 .ex_list__txt {
     border: 1px solid darkslategrey;
@@ -11,41 +16,66 @@
     padding: 5px;
     text-align: center;
 }
-.ex_container {
-    padding: 10px;
+#ex_container {
+    max-height: 30vh;
+    padding: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border: 1px solid grey;
     gap: 15px;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    color:white;
+    background-color:#112d49;
+    opacity: .8;
 }
-.ex_form {
+#ex_form {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     font-size: 24px;
 }
-.ex_form__button {
-    padding: 5px;
-    align-self: end;
-}
-.ex_form__label {
+
+#ex_super-btn {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #112d49;
+    color: white;
+    border-radius: 5px;
     display: flex;
-    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) translateY(-80%);
+    z-index: 99999999999;
+}
+#ex_super-btn:hover {
+    opacity: .8;
+    cursor: pointer;
+
 }
 
-.ex_inactive {
-    display: none;
-}
-.ex_active {
-    display: flex;
-}
-.ex_super-btn {
-    padding: 10px;
-    font-size: 16px;
-    background-color: coral;
+#ex_form__button {
+    color: black;
+    cursor: pointer;
+    background-color: beige;
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    border: none;
     border-radius: 5px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+}
+#ex_form__button:hover{
+    background-color: rgb(244, 240, 155);
+}
+
+#ex_form__input-rows,#ex_form__input-interval{
+    min-width: 80px;
+    max-width: 120px;
+    height: 40px;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
 }
