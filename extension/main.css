@@ -32,8 +32,13 @@
     sans-serif;
     color: white;
     background-color: #112d49;
-    /*background-color: black;*/
     opacity: .8;
+}
+
+.isInteresting {
+    background-color: red;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 #ex_form {
