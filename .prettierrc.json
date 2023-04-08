@@ -1,0 +1,26 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "tab-nine.experimentalAutoImports": true,
+  "files.autoSave": "afterDelay",
+  "[javascript]": {
+    "editor.defaultFormatter": "event.prettier-webstorm"
+  },
+  "[javascript react]": {
+    "editor.defaultFormatter": "event.prettier-webstorm"
+  },
+  "editor.codeActionsOnSave": {
+
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.workingDirectories": [
+    { "directory": "./client", "changeProcessCWD": true },
+    { "directory": "./server", "changeProcessCWD": true }
+  ],
+  "editor.defaultFormatter": "event.prettier-webstorm",
+  "json.schemas": [],
+
+  "settingsSync.ignoredSettings": [],
+  "git.openRepositoryInParentFolders": "never",
+  "security.workspace.trust.untrustedFiles": "open"
+}
