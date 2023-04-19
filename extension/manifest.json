@@ -1,20 +1,27 @@
 {
-  "name": "React Chrome Extension",
-  "version": "1.0.0",
+  "name": "CryptoVolume",
+  "version": "1.0.1",
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "css": ["main.css"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "main.css"
+      ]
     }
-
   ],
   "action": {
-    "default_popup": "./popup.html",
-    "default_title": "My Extension"
+    "default_title": "CryptoVolume"
   },
   "background": {
   },
-  "permissions": ["scripting", "activeTab"]
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ]
 }
